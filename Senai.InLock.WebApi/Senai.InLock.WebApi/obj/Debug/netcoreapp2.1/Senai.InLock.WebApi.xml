@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.InLock.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.InLock.WebApi.Controllers.EstudioController.CadastrarEstudio(Senai.InLock.WebApi.Domain.EstudioDomain)">
+            <summary>
+            Metodo para cadastrar Estudio
+            </summary>
+            <param name="estudio"></param>
+            <returns>retorna um Estudio cadsatrado</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Controllers.JogosController.ListarJogos">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Repositories.EstudioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Repositories.EstudioRepository.CadastarEstudio(Senai.InLock.WebApi.Domain.EstudioDomain)">
+            <summary>
+            
+            </summary>
+            <param name="estudio"></param>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Repositories.JogosRepository.CadastrarJogos(Senai.InLock.WebApi.Domain.JogosDomain)">
+            <summary>
+            Metodo Post onde cadastra Jogos
+            </summary>
+            <param name="jogo">Objeto</param>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Repositories.JogosRepository.Listar">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
