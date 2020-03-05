@@ -32,5 +32,15 @@ namespace Senai.InLock.WebApi.Controllers
             _estudioRepository.CadastarEstudio(estudio);
             return Created("http://localhost:5000/api/Estudio", estudio);
         }
+
+        /// <summary>
+        /// Método que mostra lista de Estúdios
+        /// </summary>
+        /// <returns>retornar um lista de estúdios</returns>
+        [HttpGet]
+        public IActionResult ListarEstudios()
+        {
+            return Ok(_estudioRepository.Listar());
+        }
     }
 }

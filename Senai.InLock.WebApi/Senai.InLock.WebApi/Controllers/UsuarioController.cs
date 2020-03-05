@@ -6,11 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Senai.InLock.WebApi.Controllers
 {
-    public class UsuarioController : Controller
+    public class UsuarioController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+      
     }
 }

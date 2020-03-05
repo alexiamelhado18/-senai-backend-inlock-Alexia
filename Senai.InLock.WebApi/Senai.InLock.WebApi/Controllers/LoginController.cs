@@ -1,16 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Mvc;
+using Senai.InLock.WebApi.Interfaces;
+using Senai.InLock.WebApi.Repositories;
+
 
 namespace Senai.InLock.WebApi.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : ControllerBase
     {
-        public IActionResult Index()
+        private IUsuarioRepository _usuarioRepository { get; set; }
+
+        public LoginController()
         {
-            return View();
+            _usuarioRepository = new UsuarioRepository();
+        }
+
+      
+        [HttpPost]
+        public IActionResult Login(LoginViewModel login)
+        {
+            //UsuarioRepository usuarios = _usuarioRepository.BuscarPorConta();
+
         }
     }
 }

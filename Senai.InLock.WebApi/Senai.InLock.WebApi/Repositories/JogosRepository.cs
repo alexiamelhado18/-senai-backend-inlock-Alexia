@@ -20,9 +20,9 @@ namespace Senai.InLock.WebApi.Repositories
             throw new NotImplementedException();
         }
         /// <summary>
-        /// Metodo Post onde cadastra Jogos
+        /// Metodo que cadastra novos Jogos
         /// </summary>
-        /// <param name="jogo">Objeto</param>
+        /// <param name="jogo">Objeto jogo que será cadastrado</param>
         public void CadastrarJogos(JogosDomain jogo)
         {
 
@@ -47,9 +47,9 @@ namespace Senai.InLock.WebApi.Repositories
             }
         }
         /// <summary>
-        /// 
+        /// Meétodo que lista jogos cadastrados
         /// </summary>
-        /// <returns></returns>
+        /// <returns>retornar lista de jogos</returns>
         public List<JogosDomain> Listar()
         {
             List<JogosDomain> jogos = new List<JogosDomain>();

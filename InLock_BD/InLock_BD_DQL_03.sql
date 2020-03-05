@@ -6,7 +6,7 @@ USE InLock_Games_Manha
 SELECT * FROM Usuario;
 
 -- Listar todos os estúdios
-SELECT * FROM Estudios;
+SELECT Estudios.IdEstudio, Estudios.NomeEstudio FROM Estudios;
 
 -- Listar todos os jogos
 SELECT * FROM Jogos;

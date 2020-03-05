@@ -7,7 +7,6 @@ namespace Senai.InLock.WebApi.Interfaces
     {
         List<EstudioDomain> Listar();
 
-        EstudioDomain BuscarPorId(int id);
 
         void CadastarEstudio(EstudioDomain estudio);
     }

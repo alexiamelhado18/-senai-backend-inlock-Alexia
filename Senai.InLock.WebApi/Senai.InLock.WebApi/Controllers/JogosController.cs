@@ -20,15 +20,15 @@ namespace Senai.InLock.WebApi.Controllers
         public JogosController()
         {
             _jogosRepository = new JogosRepository();
-}
+        }
+
+
         /// <summary>
-        /// 
+        /// Método que mostra lista de jogos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna um lista de jogos</returns>
         public IActionResult ListarJogos()
         {
-          
-
             return Ok(_jogosRepository.Listar());
         }
     }
